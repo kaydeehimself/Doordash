@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;  
+    background: url('./assets/fruits-2200001.jpg');
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 20%;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+
+    .empty {
+        width: 5.8em;
+    }
+    
+    .logo{
+        
+        a {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+            
+                    
+        }
+
+        .logoimg {
+            margin-top: 1.5em;
+            width: 3.5em;
+            
+
+        }
+
+    } 
+
+    nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: white;
+        height:100vh;
+        width: 40%;
+        z-index: 999;
+        text-transform: uppercase;
+        transform: translateX(100%);
+        transition: transform .5s ease-in-out;
+        
+        ul {
+            color:rgb(0, 0, 0);
+            font-weight: bold;
+            list-style-type: none;
+            margin-top: 8em;
+            padding: 0;                         
+            li {
+                                
+                a {
+                    color: rgb(0, 0, 0);
+                    padding: .75em 2em;
+                    display:block;
+                    
+                    &:hover {
+                        background-color: rgb(235, 235, 235);
+                    }
+                    
+                }
+
+                
+               }
+
+        }
+        .close {
+            width: 2.5em;
+            margin: 2em;
+            float: right;
+            cursor: pointer;
+        }
+    }
+    .menu {
+        margin-top: 1.5em;
+        margin-right: -2em;
+        width: 5em;
+        height: 5vh;
+        stroke: white;
+        cursor: pointer;
+        path {
+            fill: rgb(252, 252, 252);
+        }
+    }
+      
+      }
+.hero {
+    display: flex;
+    justify-content: space-between;    
+    color: white;
+    height: 90vh;
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 2em;
+        line-height: 3.3rem;
+        
+    }
+    .hero1{
+        text-align: center;
+        
+        a {
+            text-decoration: underline;
+            color: white;            
+            
+        }
+        input[type=search] {
+            border-style: solid;
+            border-color:rgb(202, 202, 202);
+            border-width: 0.06em;
+            border-radius: 2.5em;
+            padding: 0.9em 2.5em 0.9em 2.5em;
+            width: 100%;
+
+        }
+    }
+}
+
+.section1 {
+    display: flex;    
+    justify-content: space-between;    
+    color: black;
+    text-align: center;
+    margin-top: 10em;
+
+    .empty1 {
+        width: 2.5em;
+    }
+    img {
+        width: 10em;
+    }
+    
+    .heading {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: bold; 
+ 
+    }
+
+    a{
+        color: red;
+        font-weight: bold;
+    }
+}
+//
+.s4col3 {
+    img {
+        width: 11em;
+        display:grid;
+        margin-left: 8.8em;
+        margin-bottom: .1em;
+        margin-block: 1em;
+    }
+   
+}
+
+.section3 {
+
+
+        
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(26, 26, 26);
+    text-align: left;
+    margin-top: 6em;
+    
+    
+    width: 100%;
+    
+    .title{
+        color: rgb(218, 218, 218);
+        font-weight: bold;
+        margin-left: 2.4em;
+        
+        
+    }
+
+    
+    li {
+        list-style-type: none;
+    }
+    a {
+        color: rgb(204, 204, 204);
+    }
+
+}
+.section4 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(26, 26, 26);
+    text-align: left;
+
+    .title{
+        color: rgb(218, 218, 218);
+        font-weight: bold;
+        margin-left: 2.4em;
+        
+    }
+
+    
+    li {
+        list-style-type: none;
+    }
+    a {
+        color: rgb(204, 204, 204);
+    }
+
+}
+footer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(26, 26, 26);
+    text-align: left;
+    color: rgb(206, 206, 206);
+    
+    li {
+        list-style-type: none;
+        display: inline-flex;
+        font-size: 100%;
+    }
+    a {
+        color: rgb(204, 204, 204);
+    }
+
+    img{
+        width: 1.5em;
+        display: inline-block;
+    }
+
+}
+
+.open-nav {
+    transform: translate(0%);
+}
+
+@media only screen and (min-width: 450px) {
+    
+    body { 
+        margin: 2em;
+        margin-top: 0.5em;
+
+    }
+
+    .hero {
+        
+    
+        h1 {
+            font-size: 1.7rem;            
+            line-height: 2.5rem;
+            margin-top: 1em;
+        }
+
+        a {
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .hero1{
+            input[type=search] {
+                width: 100%;
+                padding: 1.5em;
+                margin-bottom: -0.8em;
+            }
+
+        }
+        
+
+    }
+
+    header {
+        .a {
+            display: none;
+        }
+
+        .logo .logoimg {
+            margin-top: 7em;
+        }
+
+        .empty {
+            width: 2em;
+        }
+        
+    }
+
+    .hero-img {        
+        height: 76vh;
+        
+    }
+
+    .section1 {
+        display: block;
+        margin-top: -10em;
+        
+        img {
+            margin-top: 5em;
+           
+        }
+    
+    }
+
+    .section2 {
+        display: block;
+        img {
+            margin-top: 3em;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            margin-bottom: 2em;
+
+            a {
+                color: white;
+                border: 1px solid red;
+                width: 100%;
+                border-radius: 15em;
+                padding: .4em;
+                background-color: rgb(218, 0, 0);
+                text-align: center;
+                margin-top: 1em;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+
+        }
+        .heading{
+            font-size: 1.3rem;
+            font-weight: bold;           
+            line-height: 1.5rem;
+            margin-top: 1em;
+
+        }
+        .content {
+            font-size: 1em;
+            word-wrap: normal;
+        }
+
+    }
+
+    
+    
+
+
+
+@media only screen and (min-width: 780px) {
+
+    .menu{
+        display: none;
+    }
+
+    .hero {
+        
+    
+        h1 {
+            font-size: 2.5rem;            
+            line-height: 3.5rem;
+            
+        }
+
+        .b {
+            font-size: 0.9em;
+            
+        }
+
+        .hero1{
+            input[type=search] {
+                width: 100%;                
+                margin-bottom: -0.8em;
+            }
+
+        }
+        
+
+    }
+
+    header {
+
+        nav  {
+            transform: translate(0);
+            position: unset;
+            display: block;
+            width: auto;
+            height: auto;
+            background: none;
+
+            .close {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                margin: 0;
+    
+                li {
+                    .spec {
+                        color: white;
+                        margin-top: 1em;
+
+                        &:hover {
+                                                        
+                            background: none;
+                        }
+                        
+                    }
+
+                    .special {
+                        color: black;
+                        border: 1px solid white;
+                        width: 100%;
+                        border-radius: 15em;
+                        padding: .5em;
+                        background-color: white;
+                        text-align: center;
+                        margin-top: 1em;
+
+                        &:hover {
+                            background: white;
+                            
+                        }
+
+
+                    }
+    
+                    
+                } 
+                              
+                
+            }
+            
+        }
+
+        
+      
+        
+        .logo {
+            margin-bottom: 5em;
+            width: fit-content;
+        }
+
+        
+
+        .logo a {            
+            
+            font-weight: bold;
+            font-size: 1.5rem;
+            
+        }
+
+        .logo .logoimg {
+            
+            margin-top: 1.5em;
+            width: 2em;
+
+        }
+
+        .empty {
+            width: 12em;
+        }
+        
+    }
+
+    .hero-img {        
+        height: 100vh;
+        
+    }
+
+    .section1 {
+        display: flex;    
+        justify-content: space-between;    
+        color: black;
+        text-align: center;
+        margin-top: 10em;
+    
+        .empty1 {
+            width: 2.5em;
+        }
+        img {
+            width: 10em;
+        }
+        
+        .heading {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            font-weight: bold; 
+     
+        }
+    
+        a{
+            color: red;
+            font-weight: bold;
+        }
+    }
+    .section2 {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 3em;
+        
+
+        .container {
+            
+            margin-bottom: 8em;
+    
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 11em;
+            }
+        }
+        .content {
+            text-align: left;
+            width: 20em;
+
+            
+        }
+        .heading {
+            margin-top: 2.2em;
+        }
+
+        
+    }
+
+
+    
+
+ 
+
+
+}
+
+
+}
